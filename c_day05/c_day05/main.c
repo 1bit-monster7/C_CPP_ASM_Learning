@@ -8,7 +8,52 @@ int main() {
 	//sizeofDemo();
 	//typeCasting();
 	//operatorDemo();
-	incrementDemo();
+	//incrementDemo();
+	//orderDemo();
+	switchDemo();
+
+}
+
+int switchDemo() {
+	int code = 0;
+
+	printf("请输入匹配编码");
+
+	scanf_s("%d", &code);
+
+
+	switch (code) {
+	case 1:
+		printf("值为1");
+		break;
+	case 2:
+		printf("值为2");
+		break;
+	default:
+		printf("没匹配上");
+	}
+}
+
+int orderDemo() {
+	int age = 18;
+	printf("请输入您的年龄：");
+	scanf_s("%d", &age);
+
+
+	if (age >= 18) {
+		printf("if 已成年 \n");
+	}
+	else if (age >= 16) {
+		printf("青年 但未成年 \n");
+	}
+	else {
+		printf("低于16你来干啥 \n");
+	}
+
+	age >= 18 ? printf("三目成年了") : age >= 16 ? printf("青年了") : printf("狗几把不是");
+
+
+
 }
 
 int incrementDemo() {
@@ -44,8 +89,27 @@ int incrementDemo() {
 
 	printf("num3：%d num2：%d  \n", num3, num2); // 1 1
 
+	num3 += num2++;
 
+	printf("num3：%d num2：%d  \n", num3, num2); // 2 2
 
+	num3 -= --num2;
+
+	printf("num3：%d num2：%d  \n", num3, num2); // 1 1
+
+	num3 *= num2 + 3;
+
+	printf("num3：%d num2：%d  \n", num3, num2); // 4 1
+
+	num3 /= 2 * 2;
+
+	printf("num3：%d num2：%d  \n", num3, num2); // 1 1
+
+	int count = 10;
+
+	count %= 3;
+
+	printf("%d \n", count);
 
 }
 

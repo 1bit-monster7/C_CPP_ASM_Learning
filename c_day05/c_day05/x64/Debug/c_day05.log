@@ -1,0 +1,53 @@
+﻿  main.c
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(11,15): warning C4013: “incrementDemo”未定义；假设外部返回 int
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(89,1): warning C4305: “初始化”: 从“double”到“float”截断
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(109,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(109,9): message : 请考虑在格式字符串中使用“%zd”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(109,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(109,9): message : 请考虑在格式字符串中使用“%lld”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(109,9): message : 请考虑在格式字符串中使用“%Id”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(109,9): message : 请考虑在格式字符串中使用“%I64d”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(111,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(111,9): message : 请考虑在格式字符串中使用“%zd”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(111,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(111,9): message : 请考虑在格式字符串中使用“%lld”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(111,9): message : 请考虑在格式字符串中使用“%Id”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(111,9): message : 请考虑在格式字符串中使用“%I64d”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(113,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(113,9): message : 请考虑在格式字符串中使用“%zd”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(113,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(113,9): message : 请考虑在格式字符串中使用“%lld”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(113,9): message : 请考虑在格式字符串中使用“%Id”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(113,9): message : 请考虑在格式字符串中使用“%I64d”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(115,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(115,9): message : 请考虑在格式字符串中使用“%zd”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(115,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(115,9): message : 请考虑在格式字符串中使用“%lld”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(115,9): message : 请考虑在格式字符串中使用“%Id”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(115,9): message : 请考虑在格式字符串中使用“%I64d”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(117,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(117,9): message : 请考虑在格式字符串中使用“%zd”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(117,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(117,9): message : 请考虑在格式字符串中使用“%lld”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(117,9): message : 请考虑在格式字符串中使用“%Id”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(117,9): message : 请考虑在格式字符串中使用“%I64d”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(119,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(119,9): message : 请考虑在格式字符串中使用“%zd”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(119,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(119,9): message : 请考虑在格式字符串中使用“%lld”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(119,9): message : 请考虑在格式字符串中使用“%Id”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(119,9): message : 请考虑在格式字符串中使用“%I64d”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(121,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“size_t”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(121,9): message : 请考虑在格式字符串中使用“%zd”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(121,9): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 2 拥有了类型“unsigned __int64”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(121,9): message : 请考虑在格式字符串中使用“%lld”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(121,9): message : 请考虑在格式字符串中使用“%Id”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(121,9): message : 请考虑在格式字符串中使用“%I64d”
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(103,1): warning C4305: “初始化”: 从“double”到“float”截断
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(50): warning C4716: “incrementDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(97): warning C4716: “typeCasting”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(123): warning C4716: “sizeofDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(85): warning C4716: “operatorDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(141): warning C4716: “boolType”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day05\c_day05\main.c(159): warning C4716: “charType”: 必须返回一个值
+  c_day05.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day05\x64\Debug\c_day05.exe
