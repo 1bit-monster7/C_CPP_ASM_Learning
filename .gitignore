@@ -1,8 +1,9 @@
 # vs studio 生成的配置文件
 .vs/
 
-# 编译生成的文件
 
+
+# 编译生成的文件 
 a.out
 *.o
 *.a
@@ -18,3 +19,12 @@ bin/
 # 自动生成的文档或报告
 doc/
 coverage/
+
+# 日志文件
+.log
+.tlog
+
+.idea
+
+.xml
+
