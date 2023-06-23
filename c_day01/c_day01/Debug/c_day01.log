@@ -1,0 +1,3 @@
+﻿  main.c
+E:\c++\C_CPP_ASM_Learning\c_day01\c_day01\main.c(2,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+  c_day01.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day01\Debug\c_day01.exe

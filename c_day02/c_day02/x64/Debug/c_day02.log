@@ -1,0 +1,4 @@
+﻿  main.c
+E:\c++\C_CPP_ASM_Learning\c_day02\c_day02\main.c(24,22): warning C4090: “函数”: 不同的“const”限定符
+E:\c++\C_CPP_ASM_Learning\c_day02\c_day02\main.c(25,7): warning C4090: “初始化”: 不同的“const”限定符
+  c_day02.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day02\x64\Debug\c_day02.exe

@@ -1,0 +1,4 @@
+﻿  main.c
+E:\c++\C_CPP_ASM_Learning\c_day04\c_day04\main.c(94): warning C4716: “typePrintf”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day04\c_day04\main.c(114): warning C4716: “symbolNumber”: 必须返回一个值
+  c_day04.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day04\Debug\c_day04.exe
