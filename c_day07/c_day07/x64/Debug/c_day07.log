@@ -1,0 +1,8 @@
+﻿  main.c
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(9,12): warning C4013: “bubbleSort”未定义；假设外部返回 int
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(84): warning C4716: “maxSortDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(131): warning C4716: “arrMaxDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(117): warning C4716: “arrSortDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(152): warning C4716: “arrDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(44): warning C4716: “bubbleSort”: 必须返回一个值
+  c_day07.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day07\x64\Debug\c_day07.exe

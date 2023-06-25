@@ -8,8 +8,71 @@ int main() {
 
 	//doWhileDemo();
 
-	forDemo();
+	//forDemo();
 
+	//breakDemo();
+
+	//continueDemo();
+
+	gotoDemo();
+
+}
+
+int gotoDemo() {
+
+	goto FLAG;
+	printf("1");
+	printf("2");
+	printf("3");
+	printf("4");
+
+FLAG:
+	printf("直接跳到我这里来无视前面!\n");
+
+	for (int i = 0; i <= 100; i++) {
+		for (int j = 0; j <= 100; j++) {
+			for (int b = 0; b <= 10; b++) {
+				printf("%d\n", b);
+				if (b == 10) {
+					goto TFLAG;
+				}
+			}
+
+		}
+	}
+
+
+TFLAG:
+	printf("从循环里面跳出来\n");
+
+
+
+
+}
+
+int continueDemo() {
+	for (int k = 0; k <= 100; k++) {
+		if (k % 2 != 0) {
+			continue; //跳过本次
+		}
+		printf("执行了%d 次 \n", k);
+
+	}
+}
+
+int breakDemo() {
+	for (int i = 1; i <= 100; i++) {
+
+		if (i == 3) {
+			continue; //跳过本次
+		}
+
+		printf("执行了%d 次 \n", i);
+
+		if (i == 5) {
+			break;
+		}
+	}
 }
 
 int forDemo() {
@@ -92,7 +155,6 @@ int whileDemo() {
 	}
 	return 0;
 }
-
 
 int switchDemo() {
 	int num = 7;

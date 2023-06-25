@@ -1,8 +1,11 @@
 ﻿  main.c
-E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(11,9): warning C4013: “forDemo”未定义；假设外部返回 int
-E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(19,30): warning C4047: “:”:“int”与“char [1]”的间接级别不同
-E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(57,18): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
-E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(53): warning C4716: “doWhileDemo”: 必须返回一个值
-E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(44): warning C4716: “forDemo”: 必须返回一个值
-E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(83): warning C4716: “randomDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(17,10): warning C4013: “gotoDemo”未定义；假设外部返回 int
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(82,30): warning C4047: “:”:“int”与“char [1]”的间接级别不同
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(120,18): warning C4244: “函数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(51): warning C4716: “gotoDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(116): warning C4716: “doWhileDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(76): warning C4716: “breakDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(107): warning C4716: “forDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(61): warning C4716: “continueDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day06\c_day06\main.c(146): warning C4716: “randomDemo”: 必须返回一个值
   c_day06.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day06\Debug\c_day06.exe

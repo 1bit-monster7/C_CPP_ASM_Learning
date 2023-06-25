@@ -1,0 +1,7 @@
+﻿  main.c
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(8,13): warning C4013: “maxSortDemo”未定义；假设外部返回 int
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(81): warning C4716: “arrSortDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(116): warning C4716: “arrDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(95): warning C4716: “arrMaxDemo”: 必须返回一个值
+E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(48): warning C4716: “maxSortDemo”: 必须返回一个值
+  c_day07.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day07\Debug\c_day07.exe
