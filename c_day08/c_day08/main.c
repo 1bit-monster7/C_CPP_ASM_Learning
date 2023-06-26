@@ -1,17 +1,84 @@
+#define _CRT_SECURE_NO_WARNINGS  // 忽略警告 要写到头文件前面
+#include <Windows.h>
 #include <stdio.h>
 #include <string.h>
-#include <Windows.h>
-int main() {
-	//groupArrDemo();
-	
-	//matrixDemo();
-		
-	//charDemo();
-	
-	chartsDemo();
+#include<stdbool.h>
+
+void TestFun() {
+	int i = 0;
+	int arr[5] = { 0 };
 }
 
+int arrayAndArrayChar() {
 
+	// 字符数组
+	char szBuf[] = { 1,2,3,4,5 };
+
+	// 字符数组
+	char szBuf1[] = { 'h','e','l','l','o','w' };
+
+	// 实现字符串  字符 + 数组 + \0 确定字符结束标识位  
+	char szBuf2[] = { 'h','e','l','l','o','w','\0' };
+
+	// 第二种定义方式 实现字符串 编译器会自动在 字符尾部 添加\0 标识
+	char szBuf3[] = "六六六六";
+
+	// 字符串 碰到 \0 就结束了 后续不会输出
+	char szBuf4[] = { 'n','b','\0','1','b','i','t' };
+	printf("%s \n", szBuf4);
+}
+
+int charAndStrDemo() {
+
+	// & 取址操作符  scanf_s 默认需要传入地址值 所以普通类型的值一般都要&num  但数组值本身就返回首地址值 所以不需要特意 & 
+	//char szBuf[40];
+
+	// 规定scanf_s 传入的长度 确保字符串在限制的 内存大小区间内 溢出则不会输出
+	//scanf_s("%s", szBuf, 40);
+
+	//printf("%s", szBuf);
+
+	char szBuf1[30] = "Hellow ";
+	char szBuf2[30] = "Hellow";
+
+	printf("第一次输出：%s \n", szBuf2);
+
+
+	// strcpy(target，source) 字符串拷贝   source：拷贝数据来源 target：拷贝赋值的目标
+	//strcpy(szBuf2, szBuf1);
+	//printf("拷贝后：%s \n", szBuf2);
+
+	// strcat 字符串拼接 source：拷贝数据来源 target：拷贝赋值的目标的前面
+	//strcat(szBuf2, szBuf1);
+	//printf("第二次输出：%s \n", szBuf2);
+
+	//strcmp 比较两个字符串是否相等  相等则返回0 	返回值小于0 则代表 左边参数 比右边的参数 长度 反之亦然。
+
+	int isCamp = strcmp(szBuf1, szBuf2);
+
+	printf("%d \n", isCamp);
+}
+
+int charsDemo() {
+	char ch[] = { '1','b','t' };
+
+	printf("%s \n", ch); // 乱码输出
+
+	char str[] = { "Hello World" };
+
+	// 输出字符串
+	printf("%s \n", str);
+
+	// 输出字符串长度
+	printf("%d \n", strlen(str));
+
+	// 输出字符串占用内存大小 占用会在尾部补一个字节00 这个00是代表字符串的结束标记
+	printf("%d \n", sizeof(str));
+
+	char ch1[] = { '1','b','t','\0' };
+
+	printf("%s \n", ch1); // 补了\0 字符串结束了 打印就正常
+}
 
 int chartsDemo() {
 
@@ -119,4 +186,23 @@ int groupArrDemo() {
 
 	printf("%08x \n", arr3); // 输出数组的 16进制 首地址值
 
+}
+
+
+int main() {
+	//groupArrDemo();
+
+	//matrixDemo();
+
+	//charDemo();
+
+	//chartsDemo();
+
+	//charsDemo();
+
+	//charAndStrDemo();
+
+	//arrayAndArrayChar();
+
+	TestFun();
 }
