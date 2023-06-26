@@ -1,0 +1,8 @@
+﻿  main.c
+D:\c++\git\c_day08\c_day08\main.c(11,12): warning C4013: “chartsDemo”未定义；假设外部返回 int
+D:\c++\git\c_day08\c_day08\main.c(117,9): warning C4477: “printf”: 格式字符串“%08x”需要类型“unsigned int”的参数，但可变参数 1 拥有了类型“int (*)[3]”
+D:\c++\git\c_day08\c_day08\main.c(27): warning C4716: “chartsDemo”: 必须返回一个值
+D:\c++\git\c_day08\c_day08\main.c(84): warning C4716: “matrixDemo”: 必须返回一个值
+D:\c++\git\c_day08\c_day08\main.c(53): warning C4716: “charDemo”: 必须返回一个值
+D:\c++\git\c_day08\c_day08\main.c(119): warning C4716: “groupArrDemo”: 必须返回一个值
+  c_day08.vcxproj -> D:\c++\git\c_day08\Debug\c_day08.exe

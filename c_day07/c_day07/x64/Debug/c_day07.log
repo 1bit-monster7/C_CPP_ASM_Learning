@@ -1,8 +1,1 @@
-﻿  main.c
-E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(9,12): warning C4013: “bubbleSort”未定义；假设外部返回 int
-E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(84): warning C4716: “maxSortDemo”: 必须返回一个值
-E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(131): warning C4716: “arrMaxDemo”: 必须返回一个值
-E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(117): warning C4716: “arrSortDemo”: 必须返回一个值
-E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(152): warning C4716: “arrDemo”: 必须返回一个值
-E:\c++\C_CPP_ASM_Learning\c_day07\c_day07\main.c(44): warning C4716: “bubbleSort”: 必须返回一个值
-  c_day07.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day07\x64\Debug\c_day07.exe
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(456,5): error MSB8020: 无法找到 Visual Studio 2019 的生成工具(平台工具集 =“v142”)。若要使用 v142 生成工具进行生成，请安装 Visual Studio 2019 生成工具。或者，可以升级到当前 Visual Studio 工具，方式是通过选择“项目”菜单或右键单击该解决方案，然后选择“重定解决方案目标”。
