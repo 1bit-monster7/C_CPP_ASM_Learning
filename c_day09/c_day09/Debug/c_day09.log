@@ -1,0 +1,11 @@
+﻿  calc.c
+D:\c++\git\c_day09\c_day09\calc.c(27,8): warning C4013: “printf”未定义；假设外部返回 int
+D:\c++\git\c_day09\c_day09\calc.c(41,19): warning C4098: “swap”:“void”函数返回值
+D:\c++\git\c_day09\c_day09\calc.c(49,20): warning C4013: “strcmp”未定义；假设外部返回 int
+D:\c++\git\c_day09\c_day09\calc.c(55,8): warning C4013: “strcat”未定义；假设外部返回 int
+  main.c
+  正在生成代码...
+D:\c++\git\c_day09\c_day09\calc.c(19): warning C4716: “Inject”: 必须返回一个值
+D:\c++\git\c_day09\c_day09\calc.c(15): warning C4716: “OpenProcessProtect”: 必须返回一个值
+D:\c++\git\c_day09\c_day09\calc.c(23): warning C4716: “Hook_HP”: 必须返回一个值
+  c_day09.vcxproj -> D:\c++\git\c_day09\Debug\c_day09.exe
