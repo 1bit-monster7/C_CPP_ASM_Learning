@@ -17,9 +17,9 @@ int arrNoneMsg(struct System* op, char msg[40]);
 
 // struct 结构体定义
 struct User {
-	char name[40]; // 四十个字
-	char password[40]; // 四十个字
-	char key[40]; // 四十个字
+	char name[40]; // 四十个字符 一个汉字占2字节
+	char password[40]; // 四十个字符 一个汉字占2字节
+	char key[40]; // 四十个字符 一个汉字占2字节
 };
 
 struct System {
@@ -32,6 +32,7 @@ struct System {
 int main() {
 
 	// 初始化操作对象 operating 包含 数据列表
+
 	struct System operating = { 0 };
 
 	showMenu(&operating, "first"); // first
@@ -135,19 +136,19 @@ void changeListFormIndex(struct System* op, int index) {
 
 	printf("请输入用户名称：");
 
-	char name[78] = { 0 };
+	char name[39] = { 0 };
 
 	scanf_s("%s", name, sizeof(name));
 
 	printf("请输入密码：");
 
-	char password[78] = { 0 };
+	char password[39] = { 0 };
 
 	scanf_s("%s", password, sizeof(password));
 
 	printf("请输入卡密：");
 
-	char key[78] = { 0 };
+	char key[39] = { 0 };
 
 	scanf_s("%s", key, sizeof(key));
 	strcpy(op->user_list[index].name, name); // 字符串赋值
