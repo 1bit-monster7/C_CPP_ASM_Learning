@@ -1,0 +1,5 @@
+﻿  main.c
+E:\c++\C_CPP_ASM_Learning\c_day13\c_day13\main.c(105,10): warning C4098: “arrReset”:“void”函数返回值
+E:\c++\C_CPP_ASM_Learning\c_day13\c_day13\main.c(127,71): warning C4098: “updateUser”:“void”函数返回值
+E:\c++\C_CPP_ASM_Learning\c_day13\c_day13\main.c(205,71): warning C4098: “removeUser”:“void”函数返回值
+  c_day13.vcxproj -> E:\c++\C_CPP_ASM_Learning\c_day13\Debug\c_day13.exe
