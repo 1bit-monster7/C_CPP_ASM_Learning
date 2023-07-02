@@ -17,7 +17,7 @@ int arrNoneMsg(struct System* op, char msg[40]);
 
 // struct 结构体定义
 struct User {
-	char name[40]; // 四十个字符 一个汉字占2字节
+	char name[40]; // 四十个字符 一个汉字占2字节  ass码 1个字节的用完了 到大部分汉字就是2个字节 
 	char password[40]; // 四十个字符 一个汉字占2字节
 	char key[40]; // 四十个字符 一个汉字占2字节
 };
