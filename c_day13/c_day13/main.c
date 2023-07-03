@@ -1,4 +1,5 @@
 #define _CRT_SECURE_NO_WARNINGS
+#define MAX_USER_COUNT 100 // 最大用户数量
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,24 +11,24 @@ void updateUser(struct System* op);
 void addUser(struct System* op, int updateIndex);
 void removeUser(struct System* op);
 void showList(struct System* op);
+void findUser(struct System* op);
 void changeListFormIndex(struct System* op, int index);
-void getDetils(struct System* op);
 void arrReset(struct System* op);
 int arrNoneMsg(struct System* op, char msg[40]);
+int getDetils(struct System* op);
 
 // struct 结构体定义
 struct User {
 	char name[40]; // 四十个字符 一个汉字占2字节  ass码 1个字节的用完了 到大部分汉字就是2个字节 
 	char password[40]; // 四十个字符 一个汉字占2字节
 	char key[40]; // 四十个字符 一个汉字占2字节
+	int lv;
 };
 
 struct System {
 	int total;
-	struct User user_list[100];
+	struct User user_list[MAX_USER_COUNT];
 };
-
-
 
 int main() {
 
@@ -79,7 +80,7 @@ void runMenu(int code, struct System* op) {
 		updateUser(op);
 		break;
 	case 5:
-		getDetils(op);
+		findUser(op);
 		break;
 	case 6:
 		arrReset(op);
@@ -110,34 +111,19 @@ void updateUser(struct System* op) {
 
 	if (arrNoneMsg(op, "修改") == 0) return;
 
-	printf("请输入要修改的用户名：\n");
+	int index = getDetils(op);
 
-	char name[78] = { 0 };
-
-	scanf_s("%s", name, sizeof(name));
-
-	int index = -1;
-
-	for (int i = 0; i < op->total; i++) {
-		// 匹配相等
-		if (strcmp(op->user_list[i].name, name) == 0) {
-			index = i;
-		}
+	if (index != -1) {
+		addUser(op, index);
 	}
-
-	if (index == -1) return printf("未查询到该名称的用户.. \n");
-
-	addUser(op, index);
-
-
 };
 
 void changeListFormIndex(struct System* op, int index) {
 
+
 	printf("请输入用户名称：");
 
 	char name[39] = { 0 };
-
 	scanf_s("%s", name, sizeof(name));
 
 	printf("请输入密码：");
@@ -151,9 +137,17 @@ void changeListFormIndex(struct System* op, int index) {
 	char key[39] = { 0 };
 
 	scanf_s("%s", key, sizeof(key));
+
+	printf("请输入用户等级：");
+
+	int lv = 0 ;
+
+	scanf_s("%d", &lv);
+
 	strcpy(op->user_list[index].name, name); // 字符串赋值
 	strcpy(op->user_list[index].password, password); // 字符串赋值
 	strcpy(op->user_list[index].key, key); // 卡密
+	op->user_list->lv = lv; // 等级
 }
 
 void addUser(struct System* op, int updateIndex) {
@@ -175,55 +169,46 @@ void addUser(struct System* op, int updateIndex) {
 void showList(struct System* op) {
 	if (arrNoneMsg(op, "获取列表") == 0) return;
 
-
 	for (int i = 0; i < op->total; i++) {
-		printf("index：%d，用户名：%s，用户密码：%s，卡密：%s \n", i + 1, op->user_list[i].name, op->user_list[i].password, op->user_list[i].key);
+		printf("下标：%d，用户名：%s，用户密码：%s，卡密：%s，等级：%d \n", i + 1, op->user_list[i].name, op->user_list[i].password, op->user_list[i].key,op->user_list[i].lv );
 	}
 }
 
 void removeUser(struct System* op) {
 
 	if (arrNoneMsg(op, "删除") == 0) return;
+	 
+	int index = getDetils(op);
 
+	if (index !=-1){
 
-	showList(op);
-
-	printf("请输入要删除的用户名：\n");
-
-	char name[78] = "";
-
-	scanf_s("%s", name, sizeof(name));
-
-	int index = -1;
-
-	for (int i = 0; i < op->total; i++) {
-		// 匹配相等
-		if (strcmp(op->user_list[i].name, name) == 0) {
-			index = i;
+		for (int j = index; j < op->total; j++) {
+			op->user_list[j] = op->user_list[j + 1];
 		}
+
+		op->total--; //长度减1
+
+		printf("删除成功! \n~");
+
+		showList(op);
 	}
-
-	if (index == -1) return printf("未查询到该名称的用户.. \n");
-
-	for (int j = index; j < op->total; j++) {
-		op->user_list[j] = op->user_list[j + 1];
-	}
-
-	op->total--; //长度减1
-
-	printf("delete successful \n~");
-
-	showList(op);
 
 };
 
-void getDetils(struct System* op) {
+void findUser(struct System * op ) {
+	int i = getDetils(op);
+	if (i != -1) {
+		printf("成功!用户详细信息：姓名：%s 密码：%s key：%s lv：%d \n",op->user_list[i].name,op->user_list[i].password,op->user_list[i].key,op->user_list[i].lv);
+	};
+}
+
+int getDetils(struct System *op) {
 
 	arrNoneMsg(op, "查找");
 
 	printf("请输入要查找的的用户名：\n");
 
-	char name[78] = { 0 };
+	char name[39] = { 0 };
 
 	scanf_s("%s", name, sizeof(name));
 
@@ -231,13 +216,13 @@ void getDetils(struct System* op) {
 
 	for (int i = 0; i < op->total; i++) {
 		if (strcmp(op->user_list[i].name, name) == 0) {
-			printf("查找成功！以下是该用户详细信息\n 姓名：%s 密码：%s key：%s \n", op->user_list->name, op->user_list->password, op->user_list->key);
-			flag = 1;
+			return i;
 		}
 	}
 
 	if (flag == 0) {
 		printf("未查找到任何用户匹配 ，请确认输入的用户名是否正确！");
+		return -1;
 	}
 
 };

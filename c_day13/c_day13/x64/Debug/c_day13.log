@@ -1,0 +1,12 @@
+﻿  main.c
+D:\c++\git\c_day13\c_day13\main.c(107,10): warning C4098: “arrReset”:“void”函数返回值
+D:\c++\git\c_day13\c_day13\main.c(127,10): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“size_t”
+D:\c++\git\c_day13\c_day13\main.c(127,10): message : 此参数用作缓冲区大小
+D:\c++\git\c_day13\c_day13\main.c(133,10): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“size_t”
+D:\c++\git\c_day13\c_day13\main.c(133,10): message : 此参数用作缓冲区大小
+D:\c++\git\c_day13\c_day13\main.c(139,10): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“size_t”
+D:\c++\git\c_day13\c_day13\main.c(139,10): message : 此参数用作缓冲区大小
+D:\c++\git\c_day13\c_day13\main.c(214,10): warning C4477: “scanf_s”: 格式字符串“%s”需要类型“unsigned int”的参数，但可变参数 2 拥有了类型“size_t”
+D:\c++\git\c_day13\c_day13\main.c(214,10): message : 此参数用作缓冲区大小
+D:\c++\git\c_day13\c_day13\main.c(229): warning C4715: “getDetils”: 不是所有的控件路径都返回值
+  c_day13.vcxproj -> D:\c++\git\c_day13\x64\Debug\c_day13.exe
