@@ -8,9 +8,9 @@ int main() {
 	//三、如果运算结果超出了数据宽度的限制，多余数据将会被舍弃 
 
 
-	char ch = 100 + 200;
+	//char ch = 100 + 200;
 
-	printf("%d \n", ch); // 44 
+	//printf("%d \n", ch); // 44 
 
 	// char 类型 1Byte -128 - 127 范围 不在范围内 所以数据宽度超出了 
 
@@ -41,10 +41,11 @@ int main() {
 
 	//最大十进制值 = (2 ^ N) - 1  N 表示int 类型的位数 int = 4Byte  = 4 * 8 = 32Bit   (2^32)-1
 
-	unsigned int maxSize = 4294967295 + 145;
-	signed int maxSizeSigned = 4294967295 + 145;
-
-	printf("%d \n", maxSize); // 输出结果为 144 
+	unsigned int maxSize = 0xFFFFFFFF + 145;
+	signed int maxSizeSigned = 0x7FFFFFFF;
+	
+	printf("%u \n", maxSize); // 输出结果为 144  
+	printf("%d \n", maxSizeSigned); // 输出结果为 2147483647 
 
 	//4294967295 + 145 =  4,294,967,440  = HEX：0x 1 0000 0090  
 
@@ -71,13 +72,13 @@ int main() {
 
 	//有符号的 char sigend 因为符号位占据最高位 1位 所以 最大范围取值是 (2 ^ ( 1Byte * ( 8 - 1 ))) -1 = 127 
 
-	unsigned char str1 = 255;
+	//unsigned char str1 = 255;
 
-	signed char str2 = 127;
+	//signed char str2 = 127;
 
-	printf("%d \n", str1);
+	//printf("%u \n", str1);
 
-	printf("%d \n", str2);
+	//printf("%d \n", str2);
 
 	return 0;
 }
