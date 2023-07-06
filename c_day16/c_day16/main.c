@@ -50,6 +50,14 @@ int main() {
 	 
 	printf("%u \n", num2);
 
+	signed int num3 = 0x7FFFFFFF;
+
+	num3 += 1;
+
+	printf("%d \n", num3);
+
+
+
 
 
 
