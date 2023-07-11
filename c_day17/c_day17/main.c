@@ -28,7 +28,7 @@ int main() {
 	// 16 ^ 1 = 16 * 15 = 240;
 	// DEC：255
 
-	
+
 	//位运算： ~ (NOT) 取反，每个二进制位 0变1  1变0
 	//0011 0111
 	str3 = ~str2;
@@ -41,7 +41,7 @@ int main() {
 
 
 	//位运算： ^ (XOR) 异或，不一样则为1 否则为0
-	str3 = str1 ^ str2; 
+	str3 = str1 ^ str2;
 	//1111 1100
 	//0011 0111
 	//BIN：1100 1011
@@ -69,12 +69,12 @@ int main() {
 
 
 	//如果需要解密则
-	
+
 	char jieMPassWord = key ^ jmPassWord; // 输出0x89 刚好 == passWord的值
 
 
 
-	
+
 
 
 	return 0;
